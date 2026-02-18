@@ -2,8 +2,8 @@
 
 require "connexion.php";
 
-$sql = "select * from users";
-$stmt = $db->query($sql);
+$stmt = $db->prepare("select * from users");
+$stmt->execute();
 $users = $stmt->fetchALL(PDO::FETCH_ASSOC);
 
 echo "<pre>";
