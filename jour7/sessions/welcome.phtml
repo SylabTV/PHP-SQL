@@ -1,0 +1,25 @@
+<?php
+// Démarrage de la session pour accéder à $_SESSION
+session_start();
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenue</title>
+</head>
+<body>
+    <?php
+    if (isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])) {
+        echo "Bienvenue " . htmlspecialchars($_SESSION['pseudo']);
+    } else {
+        echo "Bienvenue invité";
+    }
+    ?>
+    
+    <br><br>
+    <!-- Lien pour détruire la session -->
+    <a href="logout.php">Se déconnecter / Détruire la session</a>
+</body>
+</html>
