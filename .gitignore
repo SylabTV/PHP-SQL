@@ -1,3 +1,6 @@
 /vendor/
 .env
-composer.lock
+composer.lockjour8/
+jour9/
+jour10/
+php-j7-soutien-blog/
