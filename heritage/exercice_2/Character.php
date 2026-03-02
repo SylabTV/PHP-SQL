@@ -26,5 +26,5 @@ class Character {
     }
     public function sayHello(): string {
         return $this->introduce();
-    }
+    } 
 }
