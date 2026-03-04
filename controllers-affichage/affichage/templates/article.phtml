@@ -1,0 +1,15 @@
+<main id="article">
+    <article>
+        <header>
+            <h2><?= htmlspecialchars($article["titre"]) ?></h2>
+        </header>
+
+        <section>
+            <?= $article["contenu"] ?>
+        </section>
+
+        <footer>
+            <a href="?">Retour au blog</a>
+        </footer>
+    </article>
+</main>
