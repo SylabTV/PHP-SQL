@@ -1,0 +1,1 @@
+{"version":2,"defects":[],"times":{"EmailTest::testCanBeCreatedFromValidEmail":0.12,"EmailTest::testCannotBeCreatedFromInvalidEmail":0.016}}
